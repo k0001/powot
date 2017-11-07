@@ -310,7 +310,7 @@ oa_hostAndPort = OA.maybeReader $ \s -> case break (== ':') s of
 
 getCmdOpts :: IO CmdOpts
 getCmdOpts = OA.execParser $ OA.info (OA.helper <*> pCmdOpts) $ mconcat
-    [ OA.fullDesc, OA.progDesc "Very fake Proof-of-Wait blockchain" ]
+    [ OA.fullDesc, OA.progDesc "Very fake Proof-of-Waste-of-Time blockchain" ]
   where
     pCmdOpts :: OA.Parser CmdOpts
     pCmdOpts = CmdOpts
