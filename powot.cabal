@@ -1,0 +1,34 @@
+name:                powot
+version:             0.1
+synopsis:            Proot-of-Waste-of-Time
+homepage:            https://github.com/k0001/powot
+license:             Apache-2.0
+license-file:        LICENSE
+author:              Renzo Carbonara
+maintainer:          ren@ren.zone
+category:            Database
+build-type:          Simple
+extra-source-files:  ChangeLog.md
+cabal-version:       >=1.10
+
+executable powot
+  main-is:             Main.hs
+  default-language:    Haskell2010
+  build-depends:
+     base,
+     binary,
+     bytestring,
+     containers,
+     cryptonite,
+     exceptions,
+     distributed-process,
+     distributed-process-p2p,
+     memory,
+     network,
+     optparse-applicative,
+     stm,
+     time,
+     vector
+
+
+
